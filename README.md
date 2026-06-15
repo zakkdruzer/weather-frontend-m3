@@ -133,11 +133,12 @@ weather-frontend-m3/
 
 Se trabajó con **commits descriptivos** para reflejar el progreso del módulo, por ejemplo:
 
-- `chore: configurar estructura sass`
-- `style: aplicar BEM a cards de lugares`
-- `layout: mejorar grid responsivo en home`
-- `feat: vista detalle con pronóstico semanal`
-- `docs: actualizar README para módulo 3`
+- `primer commit`
+- `estructura base SASS`
+- `compilacion SASS lista`
+- `toques finales de SASS listos`
+- `actualizar README para módulo 3`
+- `ultimos cambios de README`
 
 ## Repositorio
 
