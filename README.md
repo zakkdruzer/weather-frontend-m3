@@ -1,6 +1,6 @@
-# Weather Chile - Módulo 2 App de Clima
+# Weather Chile - Módulo 3 App de Clima
 
-Proyecto frontend desarrollado como parte del **Módulo 2** de la app de clima.
+Proyecto de final de módulo desarrollado como parte del **Módulo 3** de la app de clima.
 
 ## Descripción
 
