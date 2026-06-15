@@ -1,8 +1,3 @@
-/* =========================================================
-  ESTILOS GENERALES DEL DOCUMENTO
-  - Se usa flex para que el footer quede al final
-  - Se define un color de fondo suave para toda la app
-========================================================= */
 body {
   min-height: 100vh;
   display: flex;
@@ -10,122 +5,71 @@ body {
   background-color: #f8f9fa;
 }
 
-/* =========================================================
-  MAIN FLEXIBLE
-  - Hace que el contenido principal ocupe el espacio restante
-  - Esto evita que el footer quede a media pantalla
-========================================================= */
 main {
   flex: 1;
 }
 
-/* =========================================================
-  HERO SECTION
-  - Ajusta la presentación del título principal
-  - También limita el ancho del texto descriptivo
-========================================================= */
 .hero-section h1 {
   color: #212529;
 }
-
 .hero-section p {
   max-width: 650px;
 }
 
-/* =========================================================
-  GRID DE LOCALIDADES
-  - Mantiene una altura mínima mientras se renderizan las cards
-========================================================= */
 #citiesGrid {
   min-height: 120px;
 }
 
-/* =========================================================
-  TARJETAS DEL CLIMA
-  - Agregan una animación suave
-  - Mejoran la interacción visual al pasar el mouse
-========================================================= */
-.weather-card {
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-  border: none;
-}
-
-.weather-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
-/* =========================================================
-  ICONOS DEL CLIMA
-  - Aumenta el tamaño visual de los emojis o íconos
-========================================================= */
-.weather-icon {
-  font-size: 2.5rem;
-  line-height: 1;
-}
-
-/* =========================================================
-  SECCIÓN DETALLE
-  - Comienza oculta al iniciar la aplicación
-  - JavaScript la mostrará cuando el usuario seleccione una ciudad
-========================================================= */
-#detailSection {
-  display: none;
-}
-
-/* =========================================================
-  HERO DEL DETALLE
-  - Bloque destacado para la ciudad seleccionada
-  - Usa un degradado azul para dar jerarquía visual
-========================================================= */
-.detail-hero {
-  background: linear-gradient(135deg, #0d6efd, #3ea0ff);
-  color: white;
-  border-radius: 1rem;
-}
-
-/* =========================================================
-  BOTÓN VOLVER
-  - Añade separación respecto al bloque de pronóstico
-========================================================= */
-.back-btn {
-  margin-top: 1.5rem;
-}
-
-/* =========================================================
-  FOOTER
-  - Ajuste para evitar márgenes innecesarios en textos internos
-========================================================= */
 footer p,
 footer small {
   margin-bottom: 0;
 }
 
-/* =========================================================
-  ACCESIBILIDAD
-  - Mejora el foco visible al usar teclado
-  - Esto ayuda a la navegación y la UX básica
-========================================================= */
 a:focus,
 button:focus {
   outline: 3px solid rgba(13, 110, 253, 0.35);
   outline-offset: 2px;
 }
 
-/* =========================================================
-  AJUSTES RESPONSIVE PARA PANTALLAS PEQUEÑAS
-  - Optimiza tamaños para móviles cercanos a 420px
-  - Apoya el requisito de diseño responsive mobile-first
-========================================================= */
 @media (max-width: 420px) {
   .display-5 {
     font-size: 2rem;
   }
-
   .weather-icon {
     font-size: 2rem;
   }
 }
+.place-card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.place-card__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.weather-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+#detailSection {
+  display: none;
+}
+
+.detail-hero {
+  background: linear-gradient(135deg, #0d6efd, #3ea0ff);
+  color: white;
+  border-radius: 1rem;
+}
+
+.back-btn {
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

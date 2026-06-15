@@ -1,0 +1,26 @@
+.place-card {
+  border: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  // aquí podrías agregar luego modificadores, ej:
+  // &--hot { ... }
+}
+
+// Si quieres mantener una clase genérica para iconos:
+.weather-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
