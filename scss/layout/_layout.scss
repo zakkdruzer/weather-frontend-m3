@@ -1,3 +1,9 @@
+.weather-app {
+  &__main {
+    flex: 1;
+  }
+}
+
 body {
   min-height: 100vh;
   display: flex;
